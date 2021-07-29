@@ -3,8 +3,8 @@ package ru.yandex.devlada;
 import org.testng.annotations.Test;
 
 public class CreatePatternTest extends TestInitQuit {
-    //@Test(groups = "notRun")
-    @Test(groups = "run")
+    @Test(groups = "notRun")
+    //@Test(groups = "run")
     public void createPatternTest() throws InterruptedException {
         driver.get(ConfProperties.getProperty("page7"));
         searchPage.fieldInput(ConfProperties.getProperty("fieldNTicketPrn01"), ConfProperties.getProperty("idFieldNTicket"));
